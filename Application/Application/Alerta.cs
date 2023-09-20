@@ -14,6 +14,7 @@ namespace Application
         private int numero;
         private DateTime fecha;
         private int _id;
+        private int age;
 
         // DateTime fecha = new DateTime(2023, 09, 11);///
 
