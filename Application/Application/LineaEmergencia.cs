@@ -8,5 +8,13 @@ namespace Application
 {
     public class LineaEmergencia
     {
+        private int myProperty;
+
+        public LineaEmergencia(int myProperty)
+        {
+            this.myProperty = myProperty;
+        }
+
+        private int MyProperty { get => myProperty; set => myProperty = value; }
     }
 }
