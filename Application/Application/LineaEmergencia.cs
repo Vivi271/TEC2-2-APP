@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application
+﻿namespace Application
 {
     public class LineaEmergencia
     {
-        private int myProperty;
+        private List<string> numerosEmergencia;
 
-        public LineaEmergencia(int myProperty)
+        public LineaEmergencia()
         {
-            this.myProperty = myProperty;
+            numerosEmergencia = new List<string>();
+ 
+            numerosEmergencia.Add("911");
+            numerosEmergencia.Add("112");
+            numerosEmergencia.Add("123");
         }
 
-        private int MyProperty { get => myProperty; set => myProperty = value; }
+        public List<string> NumerosEmergencia
+        {
+            get { return numerosEmergencia; }
+        }
+
+        
     }
 }
